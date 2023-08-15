@@ -19,12 +19,10 @@ The project is organized into the following structure:
 ```
 .
 ├── artifacts/
-│   ├── data/
-│   │   ├── penguin_data.csv
-│   ├── models/
-│   │   ├── penguin_model.pkl
+│   ├── penguin_clean.csv
+│   ├── penguin_clf.pkl
 ├── notebooks/
-│   ├── penguin_classification.ipynb
+│   ├── penguin_model_building.ipynb
 ├── app.py
 ├── requirements.txt
 └── README.md
