@@ -37,7 +37,7 @@ else:
     input_df =user_input_features()
 
 # combining the input features with entire penguins dataset for encoding
-penguins_raw = pd.read_csv('penguins_cleaned.csv')
+penguins_raw = pd.read_csv('artifacts\penguins_cleaned.csv')
 penguins = penguins_raw.drop(columns=['species'],axis=1)
 df = pd.concat([input_df,penguins],axis=0)
 
@@ -59,7 +59,7 @@ else:
     st.write(df)
 
 # Reading classification model
-load_clf = pickle.load(open('penguins_clf.pkl','rb'))
+load_clf = pickle.load(open('artifacts\penguins_clf.pkl','rb'))
 
 # making predictions
 prediction =  load_clf.predict(df)
